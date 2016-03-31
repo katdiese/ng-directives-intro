@@ -10,3 +10,15 @@
 .valid {
   color: green;
 }
+.sale {
+  color: #FFCC00;
+}
+.cam-img {
+  width: 7rem;
+}
+.cam-li {
+  list-style: none;
+}
+.cam-title {
+  font-weight: bold;
+}
