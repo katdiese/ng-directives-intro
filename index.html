@@ -2,11 +2,7 @@
 <html ng-app>
 <head>
   <title></title>
-  <style>
-    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-      display: none !important;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body ng-cloak ng-init="names=['Harry', 'Ron', 'Hermione', 'Sirius', 'Hedwig', 'Tonks']">
   <ul>
@@ -48,6 +44,9 @@
   <p>Your password is {{ password.length }} characters long</p>
   <p ng-hide="password.length > 6">Password is invalid!</p>
   <button ng-show="password.length > 6">Sign up!!</button>
+
+  <div ng-class='{ highlight: 4 + 4 == 8 }'> 4 + 4 = 8 </div>
+  <div ng-class='{ highlight: 4 + 4 == 10 }'> 4 + 4 = 10 </div>
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </body>
