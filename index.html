@@ -43,6 +43,12 @@
     3+4 = 7, hide
   </div>
 
+  <h1>Sign up page</h1>
+  <input ng-init="password=''" ng-model="password" type="password">
+  <p>Your password is {{ password.length }} characters long</p>
+  <p ng-hide="password.length > 6">Password is invalid!</p>
+  <button ng-show="password.length > 6">Sign up!!</button>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </body>
 </html>
