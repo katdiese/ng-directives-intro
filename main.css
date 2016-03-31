@@ -4,9 +4,9 @@
 .highlight {
   background-color: yellow;
 }
-.valid {
-  color: green;
-}
 .invalid {
   color: red;
+}
+.valid {
+  color: green;
 }

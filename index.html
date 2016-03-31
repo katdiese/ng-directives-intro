@@ -48,6 +48,12 @@
   <div ng-class='{ highlight: 4 + 4 == 8 }'> 4 + 4 = 8 </div>
   <div ng-class='{ highlight: 4 + 4 == 10 }'> 4 + 4 = 10 </div>
 
+  <h2>Sign up page</h2>
+  <input type="password" ng-model="pass" ng-init="pass=''">
+  <p class="invalid" ng-class='{ valid: pass.length > 6 }'>Your password is {{pass.length}} characters long</p>
+  <p ng-hide="pass.length > 6">Password is invalid!!!!</p>
+  <button ng-show="pass.length > 6">Sign up!!!</button>
+
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </body>
 </html>
